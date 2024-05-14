@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;;
+}
+
+header {
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-radius: 25px 0 0 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;    
+    justify-content: space-between;
+}
+
+header nav li {
+    display: inline;
+    text-decoration: none;
+}
+
+header nav li a{
+    text-decoration: none;
+    margin-left: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+h2 {
+    color: rgb(0, 132, 255);
+    padding-bottom: 9px;
+    font-size: 2em;
+    border-bottom: 3px solid rgb(0, 132, 255);
+}
+
+.container img {
+    margin-right: 44px;  
+}
+
+.sobreALoja p {
+    margin-top: 44px;
+}
+
+.textos {
+    width: 100%;
+    display: block;      
+}
+
+section {
+    display: flex;
+    margin-top: 36px;
+    align-items: top;
+}
+
+.todoOsProdutos {
+    flex-wrap: wrap;
+}
+
+.tabelaProduto {
+    display: grid;
+    grid-template-columns: 24.2% 24.2% 24.2% 24.2%;
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-top: 22px;
+}
+
+.cadaProduto {
+    max-width: 100%;
+}
+
+.cadaProduto img {
+    max-width: 100%;
+}
+
+.cadaProduto a {
+    text-decoration: none;
+}
+
+.cadaProduto p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+h3 {
+    color: #000;    
+    margin-bottom: 9px;
+    font-size: 26px;
+    text-align: left;
+}
+
+button {
+    width: 100%;
+    font-size: 18px;
+    padding: 4px;
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+
+@media screen and (max-width: 640px){        
+    h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        text-align: left;
+    }
+    
+    header nav li a{
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        display: block;
+        max-width: 80%;
+    }
+
+    .container .sobre {
+        display: block;        
+    }
+
+    .container .sobre img {        
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .sobreALoja p {
+        margin-top: 34px;
+    }
+        
+    .todoOsProdutos {
+        flex-wrap: wrap;
+    }
+
+    .tabelaProduto {
+        display: grid;
+        grid-template-columns: 87%;
+        column-gap: 5%;
+        row-gap: 1%;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container .sobre {
+        display: block;        
+    }
+
+    .container .sobre img {        
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .sobreALoja p {
+        margin-top: 34px;
+    }
+        
+    .todoOsProdutos {
+        flex-wrap: wrap;
+    }
+
+    .tabelaProduto {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 5%;
+        row-gap: 5%;
+        margin-top: 22px;
+    }
+
+
+}
